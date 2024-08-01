@@ -15,8 +15,8 @@ ggplot(data, aes(x = Standard.card.transaction, y = reorder(Country.Region, Stan
        x = "\nTypical Interchange Fee",
        y = "",
        shape = "") +  # Change color to shape
-  scale_x_continuous(breaks = seq(0, 1.5, 0.25),
-                     limits = c(0, 1.5),
+  scale_x_continuous(breaks = seq(0, 1.0, 0.25),
+                     limits = c(0, 1.0),
                      labels = function(x) paste0("$", x)) +
   theme_economist_white() +
   theme(legend.position = "right")
